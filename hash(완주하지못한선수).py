@@ -9,9 +9,12 @@
 
 
 def solution(participant,completion):
-    for i in participant:
-        if len(i) >=1 and len(i) <=20 and len(participant) - len(completion) == 1 and len(participant) >= 1 and len(participant) <= 100000:
-                [participant.remove(i) for i in completion]
+    if len(participant) - len(completion) == 1 and len(participant) >= 1 and len(participant) <= 100000:
+        for i in completion:
+            if len(i) >= 1 and len(i):
+                participant.remove(i)
+            else:
+                break
     return participant.pop()
 
 print(solution(["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"]))
