@@ -20,7 +20,6 @@ def solution(n):
             return (i + 1) * (i + 1)
     else:
         return -1
-
-
 print(solution())
 
+##처음이라 그런지 어버버거리다 시간 내 제출도 못하고 코드 구경만했다.. 앞으로 정신 빠짝 차리자
