@@ -24,8 +24,13 @@ def solution(participant,completion):
     return participant.pop()
 print(solution(["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"]))
 
+#답안 :
+import collections
 
-
+'''
+def solution(participant, completion):
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]'''
 
 
 
